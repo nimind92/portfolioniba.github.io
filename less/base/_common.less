@@ -1,0 +1,49 @@
+body {
+    font-family: 'Noto Sans';
+}
+
+.block {
+    text-align: center;
+
+    background-color: yellow;
+    color: #000;
+
+    padding: 10px 15px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.line {
+    background-color: @color_line;
+    height: 1px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 22px;
+    color: #000;
+    
+    @media(min-width: 768px) {
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+input, textarea {
+    outline: none;
+}
+
+.clearfix {  
+    content: '';
+    display: table;
+    
+    &::after {
+        clear: both;
+    }
+}
